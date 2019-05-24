@@ -25,13 +25,12 @@ router.post("/login", (req, res, next) => {
         return;
       }
       // We are now logged in (that's why we can also send req.user)
-      res.status(200).json(theUser);
+    s  res.status(200).json(theUser);
     });
   })(req, res, next);
 });
 
 router.post("/signup", (req, res, next) => {
-  console.log(req.body)
   const username = req.body.username;
   const password = req.body.password;
 
